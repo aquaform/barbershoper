@@ -1,0 +1,18 @@
+.page-footer{
+  @include container;
+  min-height: 458px;
+
+  background-color: #6ee866;
+}
+
+.page-footer__contacts{
+  @include margin-padding-null;
+}
+
+.page-footer__social{
+  @include margin-padding-null;
+}
+
+.page-footer__copyright{
+  @include margin-padding-null;
+}

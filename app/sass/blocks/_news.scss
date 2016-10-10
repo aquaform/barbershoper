@@ -1,0 +1,18 @@
+.news{
+  @include container;
+
+  min-height: 506px;
+
+  background-color: #00DD00;
+}
+
+.news__title{
+  margin: 0;
+  padding: 0;
+
+}
+
+.news__items{
+  margin: 0;
+  padding: 0;
+}

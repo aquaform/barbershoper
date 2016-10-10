@@ -1,0 +1,19 @@
+@import "vars";
+
+@mixin clearfix(){
+   &::after {
+     content: "";
+     display: table;
+     clear: both;
+   }
+}
+
+@mixin container(){
+  width: 320px;
+  margin: 0 auto;
+}
+
+@mixin margin-padding-null{
+  margin: 0;
+  padding: 0;
+}

@@ -31,11 +31,20 @@ body textarea:required:valid{
 }
 
 body {
-	font-size: 16px;
+	font-size: 18px;
+	line-height: 27px;
 	min-width: 320px;
 	position: relative;
-	line-height: 1.6;
+	color: #f7f4f1;
 	font-family: $default-font;
+	font-style: normal;
 	overflow-x: hidden;
+	background-color: $bg-darkgrey;
+
+	margin: 0;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
