@@ -1,13 +1,36 @@
 .advantages{
+
+
+}
+
+.advantages__wrapper{
   @include container;
-  min-height: 408px;
-  background-color: #6ee866;
+
+  min-height: 346px;
+
+
+  background-color: red;
 }
 
 .advantages__items{
+  @include margin-padding-null;
 
-  margin: 0;
-  padding: 0;
+}
 
+@media (min-width: $tablet-widths) {
+  .advantages{
+
+  }
+
+  .advantages__wrapper{
+    min-height: 537px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .advantages__wrapper{
+    min-height: 393px;
+
+  }
 }
 

@@ -3,18 +3,62 @@
 
 }
 
+
 .stats__header{
   width: 320px;
   min-height: 184px;
 
-  background-color: palegreen;
+  background-color: yellow;
 
 }
 
 .stats__items{
   width: 320px;
-  min-height: 317px;
+  min-height: 379px;
 
-  background-color: #00cc99;
+  background-color: blue;
+
+}
+
+
+@media (min-width:$tablet-widths){
+  .stats{
+    position: relative;
+    z-index: 1;
+
+    margin-top: -185px;
+  }
+
+  .stats__header{
+    min-height: 185px;
+    width: 640px;
+
+  }
+
+  .stats__items{
+    display: block;
+
+    width: 640px;
+    min-height: 317px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .stats{
+    @include clearfix;
+    margin-top: -158px;
+
+  }
+
+  .stats__header{
+    float: left;
+    width: 320px;
+    min-height: 317px;
+  }
+
+  .stats__items{
+    float: right;
+
+  }
 
 }

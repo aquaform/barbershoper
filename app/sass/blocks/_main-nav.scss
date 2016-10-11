@@ -1,4 +1,5 @@
 .main-nav{
+  @include container;
   width: 320px;
   margin: 0 auto;
 
@@ -22,3 +23,39 @@
   margin: 0;
   padding: 0;
 }*/
+
+@media (min-width:$tablet-widths){
+  .main-nav {
+    @include clearfix;
+
+  }
+
+  .main-nav__items{
+    float: left;
+    width: 569px;
+
+    min-height: 71px;
+    background-color: #00cc99;
+  }
+
+  .main-nav__user-items{
+    width: 71px;
+
+    float: right;
+    min-height: 71px;
+
+    background-color: #00DD00;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .main-nav__items{
+    width: 820px;
+
+  }
+
+  .main-nav__user-items{
+    width: 125px;
+  }
+
+}

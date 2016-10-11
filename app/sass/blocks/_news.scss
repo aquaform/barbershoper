@@ -1,18 +1,35 @@
 .news{
+
+}
+
+.news__wrapper{
   @include container;
-
   min-height: 506px;
-
   background-color: #00DD00;
 }
 
 .news__title{
   margin: 0;
   padding: 0;
-
 }
 
 .news__items{
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-widths) {
+  .news{
+
+  }
+
+  .news__wrapper{
+    min-height: 323px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .news__wrapper{
+    min-height: 364px;
+  }
 }

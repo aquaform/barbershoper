@@ -1,6 +1,6 @@
 .page-footer{
   @include container;
-  min-height: 458px;
+  min-height: 493px;
 
   background-color: #6ee866;
 }
@@ -15,4 +15,16 @@
 
 .page-footer__copyright{
   @include margin-padding-null;
+}
+
+@media (min-width: $tablet-widths) {
+  .page-footer {
+    min-height: 348px;
+  }
+}
+
+@media (min-width: $desktop-widths) {
+  .page-footer {
+    min-height: 198px;
+  }
 }

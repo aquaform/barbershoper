@@ -1,17 +1,36 @@
 .reviews{
-  @include container;
-  min-height: 319px;
 
-
-  background-color: #33a0ce;
 }
 
 .reviews__wrapper{
+  @include container;
 
-
+  min-height: 284px;
+  background-color: red;
 }
+
+
+
 
 .reviews__title{
   @include margin-padding-null;
+}
 
+
+@media (min-width: $tablet-widths) {
+  .reviews{
+
+  }
+
+  .reviews__wrapper{
+    @include container;
+    min-height: 355px;
+  }
+
+}
+
+@media (min-width: $desktop-widths) {
+  .reviews__wrapper{
+    min-height: 382px;
+  }
 }

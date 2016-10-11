@@ -10,11 +10,11 @@
 
   height: 85px;
 
-  background-color: red;
+ // background-color: red;
 
 }
 
-/*
+
 @media (min-width:$tablet-widths){
   .page-header{
     position: relative;
@@ -26,6 +26,7 @@
   }
 
   .page-header__logo{
+
     position: absolute;
     bottom: 0;
 
@@ -37,11 +38,11 @@
 
 @media (min-width:$desktop-widths) {
   .page-header{
-    width: $desktop-widths;
+    width: 1200px;
     padding-bottom: 648px;
   }
 
   .page-header__logo {
     height: 648px;
   }
-}*/
+}
