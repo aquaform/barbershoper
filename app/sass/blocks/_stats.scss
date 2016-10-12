@@ -5,8 +5,9 @@
 
 
 .stats__header{
-  width: 320px;
-  min-height: 184px;
+
+  min-height: 127px;
+  padding: 27px 35px;
 
   background-color: yellow;
 
@@ -16,10 +17,11 @@
   width: 320px;
   min-height: 379px;
 
+
   background-color: blue;
 
-}
 
+}
 
 @media (min-width:$tablet-widths){
   .stats{
@@ -32,6 +34,7 @@
   .stats__header{
     min-height: 185px;
     width: 640px;
+    @include margin-padding-null;
 
   }
 
@@ -40,6 +43,7 @@
 
     width: 640px;
     min-height: 317px;
+    @include margin-padding-null;
   }
 }
 
@@ -54,10 +58,12 @@
     float: left;
     width: 320px;
     min-height: 317px;
+    @include margin-padding-null;
   }
 
   .stats__items{
     float: right;
+    @include margin-padding-null;
 
   }
 

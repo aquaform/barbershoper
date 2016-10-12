@@ -1,22 +1,26 @@
 .page-header{
   @include container;
-  min-height: 135px;
+  min-height: 113px;
+  padding-top: 23px;
 
   background-color: green;
 
 }
 
 .page-header__logo{
+  margin: auto;
+  height: 40px;
+  width: 235px;
 
-  height: 85px;
-
- // background-color: red;
+  background-color: red;
 
 }
 
 
 @media (min-width:$tablet-widths){
   .page-header{
+
+    padding-top: 0;
     position: relative;
 
     width: $tablet-widths;
@@ -38,7 +42,7 @@
 
 @media (min-width:$desktop-widths) {
   .page-header{
-    width: 1200px;
+    min-width: 1200px;
     padding-bottom: 648px;
   }
 
