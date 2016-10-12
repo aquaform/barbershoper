@@ -8,15 +8,19 @@
   background-color: #00DD00;
 }
 
-.news__title{
-  margin: 0;
-  padding: 0;
+.news__items{
+  @include margin-padding-null;
 }
 
-.news__items{
-  margin: 0;
-  padding: 0;
+.news__item{
+  @include margin-padding-null;
 }
+
+.news__title{
+  @include margin-padding-null;
+}
+
+
 
 @media (min-width: $tablet-widths) {
   .news{
