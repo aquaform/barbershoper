@@ -1,20 +1,21 @@
 .page-header{
   @include container;
-  min-height: 113px;
-  padding-top: 23px;
-
-  background-color: green;
-
+  min-height: 143px;
+  padding-top: 33px;
 }
 
 .page-header__logo{
   margin: auto;
-  height: 40px;
+  height: 34px;
   width: 235px;
+  text-align: center;
+}
 
-  background-color: red;
+.page-header__logo img{
 
 }
+
+
 
 
 @media (min-width:$tablet-widths){
@@ -26,17 +27,22 @@
     width: $tablet-widths;
     min-height: 70px;
     padding-bottom: 400px;
+    background-color: #000;
 
   }
 
   .page-header__logo{
-
     position: absolute;
     bottom: 0;
-
     width: 100%;
     height: 400px;
-
+    background-color: black;
+    background-image: url("../img/background-logo-tablet-jpg.jpg");
+    background-repeat: no-repeat;
+    background-position: center -70px;
+  }
+  .page-header__logo img{
+    margin-top: 100px;
   }
 }
 
@@ -48,5 +54,11 @@
 
   .page-header__logo {
     height: 648px;
+    background-image: url("../img/background-logo-desktop-jpg.jpg");
+    background-size: cover;
+  }
+
+  .page-header__logo img{
+    margin-top: 120px;
   }
 }
