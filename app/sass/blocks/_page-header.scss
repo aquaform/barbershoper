@@ -1,11 +1,13 @@
 .page-header{
   @include container;
-  min-height: 143px;
-  padding-top: 33px;
+  min-height: 123px;
+  padding: 28px 0;
+
 }
 
 .page-header__logo{
   margin: auto;
+
   height: 34px;
   width: 235px;
   text-align: center;
