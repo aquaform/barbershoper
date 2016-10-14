@@ -1,0 +1,12 @@
+[1014/164339:ERROR:process_reader_win.cc(173)] ResumeThread: ѕараметр задан неверно. (0x57)
+[1014/164339:ERROR:process_reader_win.cc(114)] NtOpenThread: ”казан неверный код клиента.  (0xc000000b)
+[1014/164339:ERROR:process_reader_win.cc(114)] NtOpenThread: ”казан неверный код клиента.  (0xc000000b)
+[1014/164339:ERROR:process_reader_win.cc(114)] NtOpenThread: ”казан неверный код клиента.  (0xc000000b)
+[1014/164339:ERROR:process_reader_win.cc(114)] NtOpenThread: ”казан неверный код клиента.  (0xc000000b)
+[1014/164339:ERROR:process_reader_win.cc(114)] NtOpenThread: ”казан неверный код клиента.  (0xc000000b)
+[1014/164339:ERROR:process_reader_win.cc(114)] NtOpenThread: ”казан неверный код клиента.  (0xc000000b)
+[1014/164339:ERROR:process_reader_win.cc(114)] NtOpenThread: ”казан неверный код клиента.  (0xc000000b)
+[1014/164339:ERROR:process_reader_win.cc(233)] ReadMemory at 0x38ae5e4 of 8 bytes failed: «апрос ReadProcessMemory или WriteProcessMemory был выполнен только частично. (0x12B)
+[1014/164339:ERROR:exception_snapshot_win.cc(180)] EXCEPTION_POINTERS read failed
+[1014/164339:WARNING:crash_report_exception_handler.cc(56)] ProcessSnapshotWin::Initialize failed
+[1014/164339:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: ѕопытка доступа к процессу, выполн€ющему процедуру завершени€.  (0xc000010a)

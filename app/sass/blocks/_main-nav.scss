@@ -127,9 +127,10 @@
 
 .main-nav__user-items {
    //min-height: 55px;
+
 }
 
-.main-nav__user-items a{
+.main-nav__user-items a {
   position: relative;
   display: block;
   padding: 17px 21px;
@@ -138,7 +139,9 @@
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+}
 
+.main-nav__user-login{
   &::before{
     content: "";
     position: absolute;
@@ -148,9 +151,7 @@
     width:16px;
     height: 16px;
 
-
     background-image: url("../img/login-png.png");
-
   }
 }
 
@@ -225,6 +226,7 @@
   }
 }
 
+//------------------------------------------------------------------------
 @media (min-width:$tablet-widths){
   .main-nav {
     width: auto;
@@ -264,6 +266,21 @@
     &:last-child{
       margin-right: 0px;
     }
+    &--active {
+      position: relative;
+
+      &::after{
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -3px;
+        left: 0;
+
+        height: 3px;
+
+        background: #826550;
+      }
+    }
   }
 
   .main-nav__item a{
@@ -290,33 +307,111 @@
     }
   }
 
-  .main-nav__user-item a{
+  .main-nav__user-login{
     width: 50px;
-
     padding: 0;
-
     font-size: 0;
 
     &::before{
+      background: url("../img/login-btn-tablet.png");
       top: 29px;
       left: 12px;
     }
 
-    &::before:hover{
-      background-image: url("../img/login-btn-hover.png");
+    &:hover::before{
+      background: url("../img/login-btn-hover.png");
 
     }
   }
 }
-
+//------------------------------------------------------------------------
 @media (min-width: $desktop-widths) {
   .main-nav__items{
-    width: 820px;
+    width: 780px;
 
   }
 
+  .main-nav__item{
+    margin-right: 0;
+    &--active::after{
+      right: 30px;
+      left: 30px;
+    }
+  }
+
+  .main-nav__item a{
+    padding-right: 31px;
+    padding-left: 31px;
+  }
+
+  .main-nav__item a[href] {
+    &:hover {
+      color: #000000;
+
+      background-color: #ffffff;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: #ffffff;
+      opacity: 1;
+    }
+  }
+
   .main-nav__user-items{
-    width: 125px;
+    width: auto;
+    max-width: 160px;
+    padding: 0;
+
+  }
+
+  .main-nav__user-item a{
+    padding-top: 27px;
+    padding-bottom: 27px;
+  }
+
+  .main-nav__user-login{
+    position: relative;
+
+    width: auto;
+    height: auto;
+
+    padding-top: 25px;
+    padding-right: 30px;
+    padding-bottom: 23px;
+    padding-left: 50px;
+
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: #000000;
+
+      background-color: #ffffff;
+    }
+
+    &:active{
+      color: rgba(0, 0, 0, 0.3);
+
+      background-color: #ffffff;
+    }
+
+    &:hover::before {
+      background: url("../img/login-btn-active.png") ;
+    }
+
+    &:active::before{
+      background: url("../img/login-btn-active.png") ;
+      opacity: 0.3;
+    }
+  }
+
+  .main-nav__user-login::before{
+    left: 15px;
   }
 
 }
