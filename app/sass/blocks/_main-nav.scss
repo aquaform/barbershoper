@@ -3,7 +3,8 @@
   @include container;
   width: 320px;
   min-height: 50px;
-  margin: 22px auto;
+  margin: 22px 0 0 0;
+
   background-color: #826550;
 
 }
@@ -284,7 +285,7 @@
   }
 
   .main-nav__item a{
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 600;
     padding: 0;
     padding-top: 25px;
@@ -373,7 +374,6 @@
 
   .main-nav__user-login{
     position: relative;
-
     width: auto;
     height: auto;
 
