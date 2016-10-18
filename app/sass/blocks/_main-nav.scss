@@ -1,7 +1,9 @@
 .main-nav{
+
   position: relative;
-  @include container;
-  width: 320px;
+  //@include container-fluid;
+
+  width: auto;
   min-height: 50px;
   margin: 22px 0 0 0;
 
@@ -227,6 +229,16 @@
   }
 }
 
+
+
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
 //------------------------------------------------------------------------
 @media (min-width:$tablet-widths){
   .main-nav {
@@ -238,8 +250,14 @@
   }
 
   .main-nav__wrapper{
-    @include clearfix;
-    @include container;
+    @include container-fluid;
+    //@include clearfix;
+
+    display: flex;
+    justify-content: space-between;
+
+    outline: 1px solid yellow;
+    outline-offset: 3px;
   }
 
   .main-nav__toggle{
@@ -251,6 +269,7 @@
     width: 570px;
 
     min-height: 71px;
+    outline: 3px solid red;
   }
 
   .main-nav__user-items{
@@ -258,6 +277,7 @@
 
     width: 60px;
     min-height: 71px;
+    outline: 3px solid red;
   }
 
   .main-nav__item{
@@ -265,7 +285,7 @@
     margin-right: 32px;
 
     &:last-child{
-      margin-right: 0px;
+      margin-right: 0;
     }
     &--active {
       position: relative;
