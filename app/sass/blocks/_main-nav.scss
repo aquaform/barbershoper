@@ -1,8 +1,5 @@
 .main-nav{
-
   position: relative;
-  //@include container-fluid;
-
   width: auto;
   min-height: 50px;
   margin: 22px 0 0 0;
@@ -129,7 +126,6 @@
 }
 
 .main-nav__user-items {
-   //min-height: 55px;
 
 }
 
@@ -251,13 +247,8 @@
 
   .main-nav__wrapper{
     @include container-fluid;
-    //@include clearfix;
-
     display: flex;
     justify-content: space-between;
-
-    outline: 1px solid yellow;
-    outline-offset: 3px;
   }
 
   .main-nav__toggle{
@@ -265,27 +256,24 @@
   }
 
   .main-nav__items{
-    float: left;
-    width: 570px;
-
+    display: flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
     min-height: 71px;
-    outline: 3px solid red;
+    justify-content: space-between;
   }
 
   .main-nav__user-items{
-    float: right;
-
     width: 60px;
     min-height: 71px;
-    outline: 3px solid red;
   }
 
   .main-nav__item{
-    float: left;
-    margin-right: 32px;
+
+    margin-right: 21px;
 
     &:last-child{
-      margin-right: 0;
+      margin-right: 20px;
     }
     &--active {
       position: relative;
@@ -305,7 +293,7 @@
   }
 
   .main-nav__item a{
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
     padding: 0;
     padding-top: 25px;
@@ -346,23 +334,30 @@
   }
 }
 //------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+//------------------------------------------------------------------------
+
 @media (min-width: $desktop-widths) {
   .main-nav__items{
-    width: 780px;
+
 
   }
 
   .main-nav__item{
     margin-right: 0;
     &--active::after{
-      right: 30px;
-      left: 30px;
+      right: 20px;
+      left: 20px;
     }
   }
 
   .main-nav__item a{
-    padding-right: 31px;
-    padding-left: 31px;
+    padding-right: 21px;
+    padding-left: 21px;
   }
 
   .main-nav__item a[href] {

@@ -27,7 +27,7 @@
     flex-direction: column;
     padding-top: 0;
 
-    width: $tablet-widths;
+    //width: $tablet-widths;
     min-height: 70px;
 
     background-color: #000;
@@ -35,14 +35,14 @@
   }
 
   .page-header__logo{
-
     order: 2;
     width: 100%;
     height: 400px;
     background-color: black;
-    background-image: url("../img/background-logo-tablet-jpg.jpg");
+    background-image: url("../img/background-logo-desktop-jpg.jpg");
     background-repeat: no-repeat;
     background-position: center -70px;
+    background-size: cover;
   }
   .page-header__logo img{
     margin-top: 100px;
@@ -51,13 +51,13 @@
 
 @media (min-width:$desktop-widths) {
   .page-header{
-    min-width: 1200px;
+    //min-width: 1200px;
 
   }
 
   .page-header__logo {
     height: 648px;
-    background-image: url("../img/background-logo-desktop-jpg.jpg");
+    //background-image: url("../img/background-logo-desktop-jpg.jpg");
     background-size: cover;
   }
 
